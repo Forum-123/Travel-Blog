@@ -8,22 +8,51 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+       .form-group i {
+            position: absolute;
+        }
+        
+        .form-group {
+            width: 90%;
+            margin-bottom: 1%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+
+        .input-field {
+            width: 100%;
+            text-align: left;
+            padding-left: 6%;
+        }
+
+        input[type = text], [type = password] {
+            width: 100%;
+            padding-left: 30px;
+        }
+    </style>
 </head>
 <body style="background-image: url('Images/background.jpeg'); background-repeat: no-repeat; background-size: 300%;">
     <div class="container">
-        <form action="/login.html" class="bg-dark text-light mt-5 w-100 mx-auto" style="border-radius: 1%">
+        <form action="/login.html" class="bg-light text-dark mt-5 w-50 mx-auto" style="border-radius: 1%">
             <h2 class="text-center mt-2">Log in</h2>
-            <div class="form-group ml-4 mr-4">
-                <i class="fa fa-user"></i>
-                <input type="text" name="txtUsername" class="form-control" required="required" placeholder="Username" style="border-radius: 10%;">
+            <div class="form-group">
+                <i class="fa fa-user icon"></i>
+                <input type="text" name="txtUsername" class="form-control input-field mx-auto" required="required" placeholder="Username">
             </div>
-            <div class="form-group ml-4 mr-4">
-                <input type="password" name="txtPassword" class="form-control" required="required" placeholder="Password"/>
+            <div class="form-group">
+                <i class="fa fa-key icon"></i>
+                <input type="password" name="txtPassword" class="form-control input-field" required="required" placeholder="Password"/>
             </div>
-            <div class="form-group text-center ml-4 mr-4">
+            <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block">Log in</button>
             </div>
-            <div class="form-group form-check clearfix ml-2 mr-2">
+            <div class="form-group form-check clearfix">
               <input type="checkbox" class="form-check-input pull-left checkbox-inline">
               <label class="form-check-label">Remember me</label>
               <a href="#" class="pull-right">Forgot Password?</a>
