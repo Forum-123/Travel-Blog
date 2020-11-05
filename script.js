@@ -114,7 +114,7 @@ function postArticleEventHandler()
     }
     if (errorFlag == false)
     {
-        var message = "Thank you " + firstName.value + lastName.value + (username.value) + " for submitting the blog on " + heading.value;
+        var message = "Thank you " + firstName.value + " " + lastName.value + " " + "(" + username.value + ")" + " for submitting the blog on " + heading.value;
         alert(message);
         location.href="blog.html"; // Goes back to homepage
     }   
