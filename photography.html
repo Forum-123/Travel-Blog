@@ -36,8 +36,42 @@
         }
 
         body {
-            padding-top: 100px;
+            padding-top: 110px;
             background-color: #F2F2F2;
+        }
+
+        .round li {
+            border-radius: 10px;
+            margin: 1px 3px;
+            height: 10px;
+            max-width: 10px;
+            border: 1px solid blue;            
+            background-color: lightblue;
+        }
+
+        .carousel-control-prev, 
+        .carousel-control-next {
+            top: 90%;
+        }
+
+        .transbox {
+            position: relative;
+            margin-left: 5%;
+            margin-top: 60%;
+            background-color: #FFFFFF;
+            border: 1px solid black;
+            opacity: 0.8;
+            float: left;
+            bottom: 5%;
+            padding-left: 5%;
+            padding-right: 5%;       
+        }
+
+        .transbox h4 {
+            position: relative;
+            font-weight: bolder;
+            color: #000000;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -90,45 +124,149 @@
     </nav>
 
     <!--Carousel-->
-    <div class="carousel slide bg-primary" data-ride="carousel" id="carousel-1">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-1" data-slide-to="0" class="active" style="background-color: darkred; border: 5px solid darkred; list-style-type: circle;"></li>
-            <li data-target="#carousel-1" data-slide-to="1" style="background-color: darkred; border: 5px solid darkred; list-style-type: circle;"></li>
-            <li data-target="#carousel-1" data-slide-to="2" style="background-color: darkred; border: 5px solid darkred; border-radius:50%"></li>
-            <li data-target="#carousel-1" data-slide-to="3" style="background-color: darkred; border: 5px solid darkred; border-radius:50%"></li>
-            <li data-target="#carousel-1" data-slide-to="4" style="background-color: darkred; border: 5px solid darkred; border-radius:50%"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="min-height: 600px;">
-                <img src="flower1.jpeg" alt="flower image" class="d-block w-50 mx-auto" style="max-height: 50vh;"/>
-                <h3 class="text-center text-warning">Slide 1</h3>
-                <div class="carousel-caption">
-                    <h1>Flower</h1>
+    <div class="container">
+        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <ol class="carousel-indicators round">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2"></li>
+                <li data-target="#carousel-1" data-slide-to="3"></li>
+                <li data-target="#carousel-1" data-slide-to="4"></li>
+                <li data-target="#carousel-1" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-control">
+                <a class="carousel-control-prev text-primary" href="#carousel-1" data-slide="prev">
+                    <i class="fa fa-chevron-left fa fa-3x"></i>
+                </a>
+                <a class="carousel-control-next text-primary" href="#carousel-1" data-slide="next">
+                    <i class="fa fa-chevron-right fa fa-3x"></i>
+                </a>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active mb-5">
+                    <h3 style="text-align: center; font-family: 'Roboto Mono', monospace; font-weight: bolder; color: blue;">Africa</h3>  
+                    <div class="row">
+                        <div class="col-md-4" style="background-image: url('Images/africa/capetown.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Cape Town</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/africa/kenya.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Kenya</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/africa/fishrivercanyonnamibia.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Namibia</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item" style="min-height: 600px;">
-                <img src="flower.jpeg" alt="flower image" class="d-block w-50 mx-auto" style="max-height: 50vh;"/>
-                <h3 class="text-center text-warning card-img-overlay">Slide 2</h3>
-            </div>
-            <div class="carousel-item" style="min-height: 600px;">
-                <img src="india.jpeg" alt="flower image" class="d-block w-50 mx-auto" style="max-height: 50vh;"/>
-                <h3 class="text-center text-warning">Slide 3</h3>
-            </div>
-            <div class="carousel-item" style="min-height: 600px;">
-                <img src="dubai.jpeg" alt="flower image" class="d-block w-50 mx-auto" style="max-height: 50vh;"/>
-                <h3 class="text-center text-warning">Slide 4</h3>
-            </div>
-            <div class="carousel-item" style="min-height: 600px;">
-                <img src="london.jpeg" alt="flower image" class="d-block w-50 mx-auto" style="max-height: 50vh;"/>
-                <h3 class="text-center text-warning">Slide 5</h3>
-            </div>
+                <div class="carousel-item mb-5">
+                    <h3 style="text-align: center; font-family: 'Roboto Mono', monospace; font-weight: bolder; color: blue;">N/C/S America</h3>  
+                    <div class="row">
+                        <div class="col-md-4" style="background-image: url('Images/america/cityscape.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">New York</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/america/sanfran.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">San Francisco</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/america/rushmore.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Mt. Rushmore</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item mb-5">
+                    <h3 style="text-align: center; font-family: 'Roboto Mono', monospace; font-weight: bolder; color: blue;">Asia</h3>  
+                    <div class="row">
+                        <div class="col-md-4" style="background-image: url('Images/asia/greatwallchina.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Beijing, China</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/asia/luangprabanglaos.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Luang Prabang, Laos</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/asia/puralempuyangtemplebaliindonesia.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Bali, Indonesia</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item mb-5">
+                    <h3 style="text-align: center; font-family: 'Roboto Mono', monospace; font-weight: bolder; color: blue;">Europe</h3>  
+                    <div class="row">
+                        <div class="col-md-4" style="background-image: url('Images/europe/mykonosgreece.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Mykonos, Greece</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/europe/londonuk.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">London, UK</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/europe/parisfrance.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Paris, France</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item mb-5">
+                    <h3 style="text-align: center; font-family: 'Roboto Mono', monospace; font-weight: bolder; color: blue;">Middle East</h3>  
+                    <div class="row">
+                        <div class="col-md-4" style="background-image: url('Images/middleeast/pyramidsofgizaegypt.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Egypt</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/middleeast/qatar.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Qatar</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/middleeast/sudan.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Sudan</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item mb-5">
+                    <h3 style="text-align: center; font-family: 'Roboto Mono', monospace; font-weight: bolder; color: blue;">Oceania</h3>  
+                    <div class="row">
+                        <div class="col-md-4" style="background-image: url('Images/oceania/borabora.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Bora Bora</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/oceania/fiji.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Fiji</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="background-image: url('Images/oceania/mtyasurvanuatu.jpg'); background-repeat: no-repeat; background-size: 95%;">
+                            <div class="transbox">
+                                <h4 class="mb-1" style="text-align: center; font-family: 'Roboto Mono', monospace;">Mt Yasur, Vanuatu</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>         
         </div>
-        <a class="carousel-control-prev" href="#carousel-1" data-slide="prev">
-            <span class="fa fa-arrow-circle-left fa fa-3x"></span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-1" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+    </div>
+
     <!--Footer-->
     <footer>
         <div class="container">
