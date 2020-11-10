@@ -36,8 +36,17 @@
         }
 
         body {
-            padding-top: 100px;
+            padding-top: 110px;
             background-color: #F2F2F2;
+        }
+
+        .card-header img {
+            align-items: center;
+            position: relative;
+            margin-left: 0%;
+            margin-top: 0%;
+            float: right;
+            width: 6%; 
         }
 
         .card-title {
@@ -46,6 +55,15 @@
             font-size: 1.5rem;
             font-weight: bold;
             font-family: 'Roboto Mono', monospace;
+        }
+
+        .myImage {
+            padding: 10px;
+            box-shadow: 5px 5px 10px;
+            border-radius: 5px black;
+            border: 5px solid #eee;
+            margin: 2%;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -99,45 +117,72 @@
     </nav>
 
       
-      <!--Blog Posts-->
-      <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <article class="blog-post mb-3">
-                    <div class="row">
-                        <div class="col-4">
-                            <img class="img-fluid" alt="ImgChina" src="">
-                            <h5>Blog post title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="badge">
-                                <a href="#">China</a>
-                                <a href="#">Asia</a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid" alt="ImgDubai" src="">
-                            <h5>Blog post title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="badge">
-                                <a href="#">Dubai</a>
-                                <a href="#">Asia</a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid" alt="ImgIndia" src="">
-                            <h5>Blog post title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="badge">
-                                <a href="#">India</a>
-                                <a href="#">Asia</a>
-                            </div>
-                        </div>
+    <!--Blog Posts-->
+    <div class="container mb-3">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" style="font-size: large;">
+                        Festivals of India
+                    </a>
+                    <img alt="Profile Picture" class="rounded-circle" src="Images/asia/india_person.jpg" />
+                    <i class="float-right" style="padding-right: 1%; padding-top: 1%;">Written by: Forum Desai (forumd1999)<br>Updated: 8th December 2018 at 16:12</i>
+                </div>
+            
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Filled with diverse cultures and different religions, India is a home to a number of festivals, with festive spirit present in people's hearts and souls. Accompanied with special dishes, sweets and lights, the festivities transcent all limitations and spread sheer along all. Here is a list of festivals I experienced during my time exploring the country.</p>
+                        <img class="myImage" src="Images/asia/indiafestivals.jpg" style="width: 50%; margin-left: auto; margin-right: auto; display: block;">                      
+                        <p style="font-weight: bold;">Raksha Bandhan</p>
+                        <p>Over the years since the Vedic times, Raksha Bandhan has become a popular festival all over India. It is celebrated as a festival signifying the loving bond between a brother and a sister. Raksha Bandhan falls on the full moon day in the month of Shravan (July-August).</p>
+                        <p>The brother sits on a wooden stool and his sister decorates a thali (plate) with a rakhi (sacred thread), tikka made of turmeric and vermillon and some mithai (sweet dish). She ties the thread, praying for her brother's health and prosperity. Her brother, in turn, promises to protect her throughout his life and gives her a gift or some money.</p>
+                        <p>Markets were filled with dazzling rakhis and shop counters were packed with a variety of mithais.</p>
+                        <p style="font-weight: bold;">Janmashtami</p>
+                        <p>Janmashtami is a festival celebrating the birth of Lord Krishna. This day falls on the eighth day of Krishna Paksha (a lunar fortnight) in the month of Bhadrapad (August-September) It is celebrated in states of Uttar Pradesh, Maharashtra and other northern states.</p>
+                        <p>Devotees of Lord Krisha observe a fast and meditate on this day, to still all senses so that the divine Lord can show his presence. An ideol of Krishna in his baby form is kept in a cradle and the devotees take turns pulling its string to rock the baby Krishna.</p>
+                        <p>Since Lord Krishna loved milk and curd, a game called Dahi Handi is played. A large clay pot is filled with milk, curd, honey, butter and fruits is hung at an inaccessible height. Young boys and men come forward to try and reach the handi, by forming a human pyramid until they have reached the pot. Others splash water and cheer, trying to make the task of the climbers as difficult as possible. The victory of good over evil is celebrated in this colourful and vibrant festival.</p>
+                        <p style="font-weight: bold;">Gurpurab</p>
+                        <p>Gurpurab is an important Sikh festival, which occur ten times in a year. Each Gurpurab marks either the birth, death or suffering of a Sikh Guru. The most significant Gurpurab is that of the birth anniversary of the first Sikh Guru, Guru Nanak. It is also called Guru Nanak Jayanti and is celebrated in the month of Kartik (November).</p>
+                        <p>The Sikh flag flies at the head of the procession and people flock to the Gurudwaras. After offering prayers, there is a community lunch, called langar.</p>
+                        <p>Sikhs distribute the traditional Karah Prasaad or halwa to everyone on this day. Homes and Gurudwaras are brightly lit up in the evening. The main places of worship are the Guru Nanaka Sahib in Pakistan and the Golden Temple in Amritsar.</p>
                     </div>
-                </article>  
+                </div>
             </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <a class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" style="font-size: large;">
+                        My Southeast Asia Itinerary
+                    </a>
+                    <img alt="Profile Picture" class="rounded-circle" src="Images/europe/london_person.jpeg" />
+                    <i class="float-right" style="padding-right: 1%; padding-top: 1%;">Written by: Alice Morris (alice_123)<br>Updated: 25th June 2018 at 13:26</i>
+                </div>
+        
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Some countries like Singapore, Malaysia, and Vietnam are easy to get around, whereas countries like Myanmar and the Philippines require much longer travel times to move from one place to another. Here is my what I got up in 1 month, customised to different interests:</p>
+                        <img class="myImage" src="Images/asia/singapore.jpg" style="float: right;">
+                        <p style="font-weight: bold;">Singapore</p>
+                        <p>As it’s the most expensive country in Southeast Asia, one would think that eating in Singapore is an expensive affair. I was surprised at how easy it is to find cheap and delicious street food through the stalls, as well as hippie cafes serving western and vegan food.</p>
+                        <p>Marina Bay is packed with exciting things to do. Some are expensive and worth splurging on, others are entirely free (like walking around the gardens). This makes it the perfect day for travellers of all budgets. In the evening, I made sure I wouldn't miss the Gardens by the Bay light show – Garden Rhapsody. This mesmerizing show displays the Supertrees lit up against the night sky in time to a beautifully composed piece of classical music.</p>
+                        <p>Marina Bay Sands is also a great photographic subject itself. Set yourself up far enough away and capture that perfect shot. The best spots in my opinion were near the helix bridge and next to the Merlion fountain. At the base of Marina Bay Sands, there is a luxury shopping center, which is a great place to shop and to grab a bite to eat at the giant food court on the Ground Floor.</p>
+                        <img class="myImage" src="Images/asia/puralempuyangtemplebaliindonesia.jpg" style="float: left;"><br>
+                        <p style="font-weight: bold;">Indonesia</p>
+                        <p>Indonesia is known for having great food, some of the best diving in the world, and unique culture on each island. You can easily hop from one island to another, which is what makes the Nusa Islands so appealing even for those that are short on time. Each island has a ton of beautiful beaches and things to do.</p>
+                        <p>If you’re into diving, I would recommend Raja Ampat if you're travelling in October – April and Komodo if you're travelling in May - September.</p>
+                        <p>Pura Lempuyang Temple is one of the six most important sanctuaries in Bali and should be top on your Bali itinerary for many good reasons. Whether you want to explore Bali’s spirituality, religious customs or simply want to take the most epic photograph at the Lempuyang Gates of Heaven.</p>
+                        <p>To round up the trip, I went for a yoga retreat in Bali. All over the island, there are tons of retreats to choose from that focus on wholistic wellness, raw food diets, tantric yoga, etc.</p>
+                        <img class="myImage" src="Images/asia/southeastasiamap.jpg" style="float: right;">
+                        <p style="font-weight: bold;">Philippines</p>
+                        <p>The Philippines is known for friendly people and stunning beaches. With beautiful white sand beaches and blue waters, El Nido has everything a beach lover wants. Don’t limit yourself to just the main island, as there are many small islands around it worth exploring. Just search around and book an island hopping tour, and you will find yourself swimming in the crystal clear water, with a chance to encounter whale sharks and manta rays. </p>
+                        <p>The Kawasan Falls tour in Cebu is a thrilling day trip around the area with canyoneering, cliff jumping, jungle trekking, and swimming. The experience ends at Kawasan Falls, a picturesque waterfall that plummets into the turquoise lagoon below and has quickly become an instagram favorite. </p>
+                        <br><p>There is just so much that Southeast Asia has to offer! Enjoy the journey and let me know if there’s any other places in Southeast Asia that you think I should visit next!
+                        </p>
+                    </div>
+                </div>
+            </div>   
         </div>
     </div>
-</section>
+
 <!--Footer-->
 <footer>
     <div class="container">
